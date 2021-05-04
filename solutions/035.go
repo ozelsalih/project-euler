@@ -1,5 +1,10 @@
 // Circular primes
 // How many circular primes are there below one million?
+// 83.285 seconds
+
+// Since the sieve of eratosthenes algorithm is not used, finding prime numbers decreases program performance.
+// Finding all rotations of the digits takes a long time because the wrong algorithm is used.
+// Simply putting numbers with 1,3,7,9 in their digits into the algorithm could speed up the performance by 60 percent.
 
 package main
 
