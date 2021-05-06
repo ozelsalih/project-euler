@@ -47,12 +47,13 @@ func main() {
 	var largest int
 
 	//Because of the division by three rule, the maximum digit must be 7
-	for i := 0; i < 10000000; i++ {
+	for i := 1000000; i < 10000000; i++ {
 		if isPandigital(i) {
 			if isPrime(i) && i > largest {
 				largest = i
 			}
 		}
 	}
+
 	fmt.Println("largest n-digit pandigital prime is:", largest)
 }
